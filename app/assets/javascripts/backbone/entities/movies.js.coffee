@@ -11,7 +11,7 @@
 	API =
 		getMovies: (url, params = {}) ->
 			_.defaults params,
-				apikey: "" ## App.request "rotten:tomatoes:api:key"
+				apikey: "4wjhzfakpf7yyxwxcagqpwwq" ## App.request "rotten:tomatoes:api:key"
 				country: "us"
 		
 			movies = new Entities.MoviesCollection

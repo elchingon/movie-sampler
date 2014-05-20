@@ -1,6 +1,7 @@
-
-.DS_Store
-
-bak/after/
-
-bak/before/
+*.sassc
+.sass-cache
+capybara-*.html
+.rspec
+/log
+/tmp
+/spec/tmp

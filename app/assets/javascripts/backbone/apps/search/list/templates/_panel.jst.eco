@@ -1,9 +1,12 @@
 <section class="lead">
 	<h3 class="pull-left">Search Movies</h3>
-	<form class="form-search pull-right">
-		<div class="input-append">
-			<input type="text" class="span4 search-query" placeholder="Search for a movie...">
-			<button type="submit" class="btn">Search</button>
-		</div>
-	</form>
+	<div class="pull-right">
+		<form class="form-inline" role="form">
+	  		<div class="form-group">
+				<input type="text" class="form-control" placeholder="Search for a movie...">	
+			</div>
+			<button type="submit" class="btn">Search</button>		
+		</form>
+		
+	</div>	
 </section>

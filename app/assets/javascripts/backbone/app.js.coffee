@@ -4,8 +4,8 @@
 
 	App.addRegions
 		headerRegion: 	"#header-region"
-		mainRegion:			"#main-region"
-		footerRegion:		"#footer-region"
+		mainRegion:		"#main-region"
+		footerRegion:	"#footer-region"
 	
 	App.rootRoute = "dashboard"
 
