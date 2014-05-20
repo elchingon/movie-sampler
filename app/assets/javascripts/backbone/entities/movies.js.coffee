@@ -17,9 +17,20 @@
 			movies = new Entities.MoviesCollection
 			movies.url = "http://api.rottentomatoes.com/api/public/v1.0/#{url}.json?callback=?"
 			movies.fetch
+				data: params
+			movies	
+			
+		getMovie: (id, url, params = {}) ->
+			_.defaults params,
+				apikey: "4wjhzfakpf7yyxwxcagqpwwq" ## App.request "rotten:tomatoes:api:key"
+				
+			movie = new Entities.Movie
+				id: id
+			movie.url = "http://api.rottentomatoes.com/api/public/v1.0/#{url}.json?callback=?"
+			movie.fetch
 				reset: true
 				data: params
-			movies			
+			movie			
 	
 	App.reqres.setHandler "movie:rental:entities", ->
 		API.getMovies "lists/dvds/top_rentals",
@@ -38,6 +49,10 @@
 		API.getMovies "lists/movies/upcoming",
 			page_limit: 10
 			page: 1
+
+	App.reqres.setHandler "movie:info:entity", (id) ->
+		API.getMovie id, "movies/#{id}"
+				
 		
 # Use this in your browser's console to initialize a JSONP request to see the API in action.
 # $.getJSON("http://api.rottentomatoes.com/api/public/v1.0/movies.json?callback=?", {apikey: "vzjnwecqq7av3mauck2238uj", q: "shining"})

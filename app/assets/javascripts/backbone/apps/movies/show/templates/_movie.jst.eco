@@ -1,0 +1,33 @@
+<% if @title: %>
+	<div class="row">
+		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+			<% if @posters: %>
+				<div class="poster">
+					<img src="<%= @posters.detailed %>" />
+				</div>
+			<% end %>
+		</div>
+		<div class="col-xs-9 col-sm-8 col-md-9 col-lg-9">	
+			<h2><%= @title %></h2>
+			<div class="row">
+				<div class="col-xs-4 col-sm-3 col-md-2 col-lg-2">
+					<strong>Year:</strong> <%= @year %>
+				</div>
+				<div class="col-xs-4 col-sm-3 col-md-4 col-lg-3">
+					<strong>MPAA Rating:</strong> <%= @mpaa_rating %>
+				</div>
+				<div class="col-xs-4 col-sm-3 col-md-4 col-lg-3">
+					<strong>Studio:</strong> <%= @studio %>
+				</div>
+			</div>
+			<div class="row">
+			  <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+				<strong>Synopsis</strong><br />
+			  	<%= @synopsis %>
+			</div>
+			
+		</div>	
+	</div>	
+<% else: %>
+	<h3> Movie not found. </h3>
+<% end %>	

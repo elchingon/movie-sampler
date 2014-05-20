@@ -38,7 +38,7 @@
 						@region.currentView.$el.removeAttr "style"
 					when "spinner"	
 						return realView.close() if @region.currentView isnt loadingView
-				
+				console.log(realView)
 				@show realView unless config.debug
 			
 		getEntities: (view) ->
