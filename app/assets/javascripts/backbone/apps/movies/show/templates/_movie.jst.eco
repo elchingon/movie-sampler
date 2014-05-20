@@ -21,17 +21,21 @@
 				</div>
 			</div>
 			
-			<% if @genres: %>
-				<div class="row">
-				  <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-					<strong>Genres:</strong> 
-					<% for genre, key in @genres: %>
-						<% if key > 0: %>,<% end %>
-						<%= genre %>
-					<% end %>
-				  </div>
+			
+			<div class="row">
+				<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+					<strong>Release Date:</strong> <%= @dateFormatter @release_dates['theater'] %>
 				</div>
-			<% end %>	
+				<% if @genres: %>		
+				  	<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+						<strong>Genres:</strong> 
+						<% for genre, key in @genres: %>
+							<% if key > 0: %>,<% end %>
+							<%= genre %>
+						<% end %>
+					</div>
+				<% end %>
+			</div>		
 			
 			<% if @critics_consensus: %>
 				<h4>Ratings</h4>
@@ -41,26 +45,27 @@
 					<%= @critics_consensus %>
 				  </div>
 				</div>
-				<% if @ratings['critics_rating']: %>
-					<div class="row">
-					  <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-						<strong>Critics Ratings:</strong> <%= @ratings['critics_rating'] %>
-					  </div>
-					  <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-						<strong>Critics Score:</strong> <%= @ratings['critics_score'] %>
-					  </div>
-					</div>
-					<div class="row">
-					  <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-						<strong>Audience Ratings:</strong> <%= @ratings['audience_rating'] %>
-					  </div>
-					  <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-						<strong>Audience Score:</strong> <%= @ratings['audience_score'] %>
-					  </div>
-					</div>
-				<% end %>	
-				<hr />
-			<% end %>
+			<% end %>	
+			<% if @ratings['critics_rating']: %>
+				<div class="row">
+				  <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+					<strong>Critics Ratings:</strong> <%= @ratings['critics_rating'] %>
+				  </div>
+				  <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+					<strong>Critics Score:</strong> <%= @ratings['critics_score'] %>
+				  </div>
+				</div>
+				<div class="row">
+				  <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+					<strong>Audience Ratings:</strong> <%= @ratings['audience_rating'] %>
+				  </div>
+				  <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+					<strong>Audience Score:</strong> <%= @ratings['audience_score'] %>
+				  </div>
+				</div>
+			<% end %>	
+			<hr />
+			
 			
 			<% if @synopsis: %>
 				<div class="row">

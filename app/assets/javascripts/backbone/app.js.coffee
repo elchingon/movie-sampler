@@ -9,6 +9,12 @@
 	
 	App.rootRoute = "dashboard"
 
+	App.on "initialize:before", (options) ->
+	    App.rottenTomatoesApiKey = options.rottenTomatoesApiKey
+	
+	App.reqres.setHandler "rotten:tomatoes:api:key", ->
+		App.rottenTomatoesApiKey
+		
 	App.reqres.setHandler "default:region", ->
 		App.mainRegion
 

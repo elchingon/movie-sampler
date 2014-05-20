@@ -33,7 +33,8 @@ gem 'js-routes'
 # To use debugger
 # gem 'debugger'
 
-gem "thin"
+gem 'thin'
+gem 'figaro'
 group :assets do
   gem 'coffee-rails', '~> 4.0.0'
 

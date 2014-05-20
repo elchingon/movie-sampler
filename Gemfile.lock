@@ -53,6 +53,9 @@ GEM
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (2.0.2)
+    figaro (0.7.0)
+      bundler (~> 1.0)
+      rails (>= 3, < 5)
     fssm (0.2.10)
     gon (5.0.4)
       actionpack (>= 2.3.0)
@@ -134,6 +137,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   compass-rails
   eco
+  figaro
   gon
   jbuilder
   jquery-rails

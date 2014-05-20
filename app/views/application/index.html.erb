@@ -4,9 +4,11 @@
 	<div id="push"></div>
 </div>
 <div id="footer-region"></div>
-
+<%= ENV['ROTTEN_TOMATOES_API_KEY'] %>
 <%= javascript_tag do %>
 	$(function() {
-		MovieSampler.start();
+		MovieSampler.start({
+			rottenTomatoesApiKey: '<%= ENV['ROTTEN_TOMATOES_API_KEY'] %>' 
+		});
 	});
 <% end %>
