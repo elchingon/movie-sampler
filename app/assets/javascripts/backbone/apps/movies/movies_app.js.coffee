@@ -1,4 +1,4 @@
-@LoadingViews.module "MoviesApp", (MoviesApp, App, Backbone, Marionette, $, _) ->
+@MovieSampler.module "MoviesApp", (MoviesApp, App, Backbone, Marionette, $, _) ->
 
 	class MoviesApp.Router extends Marionette.AppRouter
 		appRoutes:

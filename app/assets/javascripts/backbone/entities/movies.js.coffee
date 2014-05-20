@@ -1,4 +1,4 @@
-@LoadingViews.module "Entities", (Entities, App, Backbone, Marionette, $, _) ->
+@MovieSampler.module "Entities", (Entities, App, Backbone, Marionette, $, _) ->
 
 	class Entities.Movie extends Entities.Model
 
@@ -17,6 +17,7 @@
 			movies = new Entities.MoviesCollection
 			movies.url = "http://api.rottentomatoes.com/api/public/v1.0/#{url}.json?callback=?"
 			movies.fetch
+				reset: true
 				data: params
 			movies	
 			

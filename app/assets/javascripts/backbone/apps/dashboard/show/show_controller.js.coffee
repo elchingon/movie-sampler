@@ -1,4 +1,4 @@
-@LoadingViews.module "DashboardApp.Show", (Show, App, Backbone, Marionette, $, _) ->
+@MovieSampler.module "DashboardApp.Show", (Show, App, Backbone, Marionette, $, _) ->
 
 	class Show.Controller extends App.Controllers.Base
 

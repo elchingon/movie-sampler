@@ -5,6 +5,6 @@
 		</div>
 	<% end %>
 </td>
-<td><%= @title %></td>
+<td><%- @linkTo @title, "movies/" + @id  %></td>
 <td><%= @mpaa_rating %></td>
 <td><%= @release_dates?.theater %></td>

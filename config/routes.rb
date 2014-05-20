@@ -1,4 +1,4 @@
-LoadingViews::Application.routes.draw do
+MovieSampler::Application.routes.draw do
   root :to => 'application#index'
 
   # The priority is based upon order of creation:

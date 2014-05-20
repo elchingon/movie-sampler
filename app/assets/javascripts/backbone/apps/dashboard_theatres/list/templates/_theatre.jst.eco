@@ -1,10 +1,10 @@
 <td>
 	<% if @posters: %>
 		<div class="thumbnail">
-			<img src="<%= @posters.thumbnail %>" />
+			<a href="#movies/<%= @id %>"><img src="<%= @posters.thumbnail %>" /></a>
 		</div>
 	<% end %>
 </td>
-<td><%= @title %></td>
+<td><%- @linkTo @title, "movies/" + @id  %></td>
 <td><%= @mpaa_rating %></td>
 <td><%= @ratings.critics_score %></td>

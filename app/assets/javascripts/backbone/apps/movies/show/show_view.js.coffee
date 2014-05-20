@@ -1,4 +1,4 @@
-@LoadingViews.module "MoviesApp.Show", (Show, App, Backbone, Marionette, $, _) ->
+@MovieSampler.module "MoviesApp.Show", (Show, App, Backbone, Marionette, $, _) ->
 
 	class Show.Layout extends App.Views.Layout
 		template: "movies/show/show_layout"

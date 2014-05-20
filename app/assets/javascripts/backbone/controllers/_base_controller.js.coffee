@@ -1,4 +1,4 @@
-@LoadingViews.module "Controllers", (Controllers, App, Backbone, Marionette, $, _) ->
+@MovieSampler.module "Controllers", (Controllers, App, Backbone, Marionette, $, _) ->
 
 	class Controllers.Base extends Marionette.Controller
 

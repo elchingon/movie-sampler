@@ -1,4 +1,4 @@
-@LoadingViews.module "Components.Loading", (Loading, App, Backbone, Marionette, $, _) ->
+@MovieSampler.module "Components.Loading", (Loading, App, Backbone, Marionette, $, _) ->
 
 	class Loading.LoadingController extends App.Controllers.Base
 		
@@ -38,7 +38,7 @@
 						@region.currentView.$el.removeAttr "style"
 					when "spinner"	
 						return realView.close() if @region.currentView isnt loadingView
-				console.log(realView)
+			
 				@show realView unless config.debug
 			
 		getEntities: (view) ->

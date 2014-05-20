@@ -1,4 +1,4 @@
-@LoadingViews.module "RentalsApp.List", (List, App, Backbone, Marionette, $, _) ->
+@MovieSampler.module "RentalsApp.List", (List, App, Backbone, Marionette, $, _) ->
 	
 	class List.Layout extends App.Views.Layout
 		template: "rentals/list/list_layout"

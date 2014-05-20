@@ -1,4 +1,4 @@
-@LoadingViews.module "FooterApp", (FooterApp, App, Backbone, Marionette, $, _) ->
+@MovieSampler.module "FooterApp", (FooterApp, App, Backbone, Marionette, $, _) ->
 
 	API =
 		show: ->

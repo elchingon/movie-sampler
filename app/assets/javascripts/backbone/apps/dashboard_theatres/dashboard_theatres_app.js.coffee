@@ -1,4 +1,4 @@
-@LoadingViews.module "DashboardTheatresApp", (DashboardTheatresApp, App, Backbone, Marionette, $, _) ->
+@MovieSampler.module "DashboardTheatresApp", (DashboardTheatresApp, App, Backbone, Marionette, $, _) ->
 
 	API =
 		list: (region) ->

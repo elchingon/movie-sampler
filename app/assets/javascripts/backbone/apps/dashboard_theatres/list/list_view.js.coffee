@@ -1,4 +1,4 @@
-@LoadingViews.module "DashboardTheatresApp.List", (List, App, Backbone, Marionette, $, _) ->
+@MovieSampler.module "DashboardTheatresApp.List", (List, App, Backbone, Marionette, $, _) ->
 
 	class List.Theatre extends App.Views.ItemView
 		template: "dashboard_theatres/list/_theatre"
