@@ -46,3 +46,14 @@ group :assets do
 
   gem 'uglifier', '>= 1.3.0'
 end
+
+group :production, :staging do
+  gem 'passenger', '~>4.0.0.rc6'
+
+  gem 'execjs'
+
+  gem 'therubyracer'
+  gem 'libv8', '~> 3.11.8'
+
+  #gem 'newrelic_rpm'
+end
