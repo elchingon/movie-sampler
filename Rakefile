@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-LoadingViews::Application.load_tasks
+MovieSampler::Application.load_tasks
