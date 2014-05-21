@@ -5,8 +5,12 @@
 
 		regions:
 			movieRegion: "#movie-region"
+			reviewsRegion: "#reviews-region"
 			
 	class Show.Movie extends App.Views.ItemView
 		template: "movies/show/_movie"
 		tagName: "div"
 		className: "movie-details"
+		
+		triggers:
+			"click #movie-reviews-link" : "list:movies:reviews:clicked"

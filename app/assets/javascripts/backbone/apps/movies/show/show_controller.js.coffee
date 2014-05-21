@@ -13,9 +13,13 @@
 			@show @layout,
 				loading: 	
 					entities: movie
-		
+			
+			
 		showMovie: (movie) ->
 			movieView = @getMovieView movie
+			
+			@listenTo movieView, "list:movies:reviews:clicked", ->
+				App.execute "list:reviews:movies:reviews", movie.id, @layout.reviewsRegion
 
 			@show movieView, region: @layout.movieRegion
 	

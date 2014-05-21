@@ -77,6 +77,11 @@
 			<% end %>
 			
 		</div>	
+	</div>
+	<div class="row">
+		<div class="col-lg-offset-3 col-xs-10 col-sm-10 col-md-10 col-lg-10">
+			<a id="movie-reviews-link" href="#movies/<%= @id %>/reviews" alt=""><h5>Show Reviews</h5></a>
+		</div>
 	</div>	
 <% else: %>
 	<h3> Movie not found. </h3>

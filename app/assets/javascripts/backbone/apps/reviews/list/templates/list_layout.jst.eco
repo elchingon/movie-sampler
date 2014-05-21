@@ -1,0 +1,6 @@
+<div class="row">
+	<div class="col-lg-offset-3">
+		<h4>Reviews</h4>
+		<div id="reviews-wrapper"></div>
+	</div>	
+</div>	
