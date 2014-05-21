@@ -1,5 +1,5 @@
-<div class="pagination pull-right">
-	<ul>
+<div>
+	<ul class="pagination">
 		<li class="disabled">
 			<a href="#">&laquo;</a>
 		</li>

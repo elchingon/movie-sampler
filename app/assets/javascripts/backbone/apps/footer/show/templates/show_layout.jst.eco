@@ -1,5 +1,5 @@
 <div id="footer">
 	<div class="container">
-		<p class="muted">Movie Sampler &copy; 2014</p>
+		<p class="muted">Movie Sampler &copy; 2014 | Movie Info provided by <a href="http://rottentomatoes.com" target="_blank">Rotten Tomatoes</a></p>
 	</div>
 </div>
