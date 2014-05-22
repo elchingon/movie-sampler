@@ -6,7 +6,8 @@
 		regions:
 			movieRegion: "#movie-region"
 			reviewsRegion: "#reviews-region"
-			
+			similarMoviesRegion: "#similar-movies-region"
+
 	class Show.Movie extends App.Views.ItemView
 		template: "movies/show/_movie"
 		tagName: "div"

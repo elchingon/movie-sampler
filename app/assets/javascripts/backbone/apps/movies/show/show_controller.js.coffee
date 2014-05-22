@@ -9,6 +9,7 @@
 
 			@listenTo @layout, "show", =>
 				@showMovie movie
+				@listSimilarMovies movie
 
 			@show @layout,
 				loading: 	
@@ -22,7 +23,10 @@
 				App.execute "list:reviews:movies:reviews", movie.id, @layout.reviewsRegion
 
 			@show movieView, region: @layout.movieRegion
-	
+		
+		listSimilarMovies: (movie) ->
+			App.execute "list:similar:movies", movie.id, @layout.similarMoviesRegion
+
 		getMovieView: (movie) ->
 	      new Show.Movie
 	        model: movie		
