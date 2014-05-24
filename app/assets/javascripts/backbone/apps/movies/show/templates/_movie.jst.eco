@@ -65,24 +65,39 @@
 				  </div>
 				</div>
 			<% end %>	
-			<% if @ratings['critics_rating']: %>
-				<div class="row">
-				  <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-					<strong>Critics Ratings:</strong> <%= @ratings['critics_rating'] %>
-				  </div>
-				  <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-					<strong>Critics Score:</strong> <%= @ratings['critics_score'] %>
-				  </div>
-				</div>
-				<div class="row">
-				  <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-					<strong>Audience Ratings:</strong> <%= @ratings['audience_rating'] %>
-				  </div>
-				  <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-					<strong>Audience Score:</strong> <%= @ratings['audience_score'] %>
-				  </div>
-				</div>
-			<% end %>	
+			
+			<div class="row movie_content_area">
+				<% if @ratings['critics_rating'] || @ratings['critics_score']: %>
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<div class="row">
+							<% if @ratings['critics_rating']: %>
+				  				<div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
+									<span class="meter <%= @downcase @ratings['critics_rating'] %>"></span>
+								 </div>
+							<% end %>	
+							 <div class="col-xs-8 col-sm-8 col-md-9 col-lg-10">
+								<strong>Critics Ratings:</strong> <%= @ratings['critics_rating'] %><br />
+								<strong>Critics Score:</strong> <%= @ratings['critics_score'] %>
+							</div>
+						</div>	
+					</div>	
+				<% end %>
+				<% if @ratings['audience_rating'] || @ratings['audience_score']: %>	
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<div class="row">
+							<% if @ratings['audience_rating']: %>
+				  				<div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
+									<span class="meter <%= @downcase @ratings['audience_rating'] %>"></span>
+								</div>
+							<% end %>	
+							<div class="col-xs-8 col-sm-8 col-md-9 col-lg-10">
+								<strong>Audience Ratings:</strong> <%= @ratings['audience_rating'] %><br />
+								<strong>Audience Score:</strong> <%= @ratings['audience_score'] %>
+							</div>
+						</div>	
+					</div>
+				<% end %>	
+			</div>			
 			<hr />
 			
 			

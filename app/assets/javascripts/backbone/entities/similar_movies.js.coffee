@@ -22,4 +22,4 @@
       movies
 
   App.reqres.setHandler "similar:movie:entities", (id) ->
-    API.getSimilarMovies id, limit: 3
+    API.getSimilarMovies id, limit: 4

@@ -1,0 +1,94 @@
+.movie_content_area .meter {
+	display:block;
+	background: transparent image-url('tomatometer.png') no-repeat left top;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	padding-left: 55px;
+	margin-bottom: 4px;
+	min-height: 50px;
+	max-height: 50px;
+	line-height: 24px;
+	width:50px;
+}
+.movie_content_area .meter.fresh {
+	background-position: 0 0;
+}
+.movie_content_area .meter.rotten {
+	background-position: 0 -50px;
+}
+.movie_content_area .meter.certified {
+	background-position: 0 -100px;
+}
+.movie_content_area .meter.upright {
+	background-position: 0 -150px;
+	margin-bottom: 1px;
+}
+.movie_content_area .meter.spilled {
+	background-position: 0 -250px;
+	margin-bottom: 1px;
+}
+.movie_content_area .meter.wts{
+	background-position:0 -200px;margin-bottom:0;
+}
+.movie_content_area .meter.spilled {
+	background-position: 0 -250px;
+	margin-bottom: 1px;
+}
+
+.movie_list .icon {
+	display: inline-block;
+	vertical-align: text-bottom;
+	background: transparent url('/images/redesign/icons-v2.png?v=20131105') no-repeat -312px -160px;
+}
+.icon.huge { width:64px; height:64px; }
+.icon.big { width:48px; height:48px; }
+.icon.medium { width:32px; height:32px; }
+.icon.small { width:24px; height:24px; }
+.icon.tiny { width:16px; height:16px; }
+
+.huge.fresh { background-position:0px 0px; }
+.huge.rotten { background-position:-64px 0px; }
+.huge.certified { background-position:-128px 0px; }
+.huge.popcorn { background-position:-128px -64px; }
+.huge.wts { background-position:-64px -64px; }
+.huge.spilled { background-position:0px -64px; }
+
+.big.fresh { background-position:-192px -48px;}
+.big.rotten { background-position:-192px -96px; }
+.big.certified { background-position:-192px -96px; }
+.big.popcorn { background-position:-240px -48px; }
+.big.wts { background-position:-240px 0px; }
+.big.spilled { background-position:-192px 0px; }
+
+.medium.fresh { background-position:-64px -128px; }
+.medium.rotten { background-position:-96px -128px; }
+.medium.certified { background-position:-160px -128px; }
+.medium.popcorn { background-position:-32px -128px; }
+.medium.wts { background-position:0px -128px; }
+.medium.spilled { background-position:-128px -128px; }
+
+.small.fresh { background-position:-288px -48px;}
+.small.rotten { background-position:-288px -96px;}
+.small.certified { background-position:-288px -72px;}
+.small.popcorn { background-position:-288px -24px;}
+.small.wts { background-position:-288px 0px;}
+.small.spilled { background-position:-288px -120px; }
+
+.tiny.fresh { background-position:-256px -144px; }
+.tiny.rotten { background-position:-272px -144px; }
+.tiny.popcorn { background-position:-288px -144px; }
+.tiny.spilled { background-position:-208px -144px; }
+.tiny.wts { background-position:-192px -144px; }
+.tiny.friend_wts { background-position:-224px -144px; }
+.tiny.friend_rating { background-position:-240px -144px; }
+/* User profile icons */
+.icon.profile { width:16px; height:16px; margin-right:3px; }
+.icon.profile.friends { background-position: -224px -160px; }
+.icon.profile.collection { background-position: -256px -160px; }
+.icon.profile.ratings { background-position: -240px -144px; }
+.icon.profile.reviews { background-position: -240px -144px; }
+.icon.profile.wts { background-position: -224px -144px; }
+.icon.profile.quoteico { background-position: -240px -160px; }
+.icon.profile.popcorn { background-position: -290px -160px; }
+.icon.profile.gift { background-position: -272px -160px; }
+.icon.profile.popcorn, .icon.profile.gift { margin-right:1px; margin-left:4px; margin-top:-1px; vertical-align:middle; width:18px; height:20px; }

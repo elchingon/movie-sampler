@@ -12,22 +12,13 @@
 		<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
 			<ul class="nav navbar-nav navbar-right">
 				<li>
-					<a href="#dashboard">
-						<i class="glyphicon glyphicon-home"></i>
-						Dashboard
-					</a>
+					<%- @linkTo "Dashboard", "dashboard", glyphicon: "home" %>
 				</li>
 				<li>
-					<a href="#search">
-						<i class="glyphicon glyphicon-search"></i>
-						Search
-					</a>
+				  <%- @linkTo "Search", "search", glyphicon: "search" %>
 				</li>
 				<li>
-					<a href="#rentals">
-						<i class="glyphicon glyphicon-list"></i>
-						Rentals
-					</a>
+				  <%- @linkTo "Rentals", "rentals", glyphicon: "list" %>
 				</li>
 			</ul>
 		</nav>	

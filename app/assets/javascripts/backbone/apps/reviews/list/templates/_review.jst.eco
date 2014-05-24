@@ -1,14 +1,16 @@
 <div>
 	<div class="row">
-		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><strong>Critic:</strong> <%= @critic %></div>
-		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><strong>Date:</strong> <%= @dateFormatter @date  %></div>
-		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><strong>Freshness:</strong> <%= @freshness %></div>
-		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><strong>Link:</strong> <%- @linkTo @publication, @links?.review, external: true %></div>
+		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+			<strong>Critic:</strong> <%= @critic %><br />
+			<strong>Date:</strong> <%= @dateFormatter @date  %><br />
+			<strong>Freshness:</strong> <%= @freshness %><br />
+			<strong>Link:</strong> <%- @linkTo @publication, @links?.review, external: true %>
+		</div>
+			
+		<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+			<strong>Review:</strong><br />
+			<%= @quote %>
+		</div>
 	</div>
-	<div class="row">
-		<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10"><strong>Review:</strong> <%= @quote %></div>
-	</div>
-	<div class="row">	
-		<hr />
-	</div>	
+	<hr />
 </div>	
