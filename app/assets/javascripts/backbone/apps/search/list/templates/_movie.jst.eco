@@ -9,4 +9,4 @@
 <td><%= @year %></td>
 <td><%= @mpaa_rating %></td>
 <td><%= @runtime %> minutes</td>
-<td><%= @ratings.critics_score %></td>
+<td><span class="icon small <%= @downcase @ratings.critics_rating %>"></span> <%= @ratings.critics_score %></td>
